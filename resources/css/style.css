@@ -1,0 +1,21 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a {
+    color: #399bd1;
+    background-color: white;
+}
+
+.navbar-nav {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
