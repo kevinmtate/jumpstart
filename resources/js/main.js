@@ -9,7 +9,18 @@ $(document).ready(function() {
         draggable: false
     });
 
-    
+    $(window).scroll(function() {
+        var verticalPosition = $(this).scrollTop();
+        var navbarHeight = $('.navbar').css('height');
+        if (verticalPosition - userScroll >= 50) {
+            $('.navbar').animate({top: '-'+navbarHeight}, 150);
+            userScroll = verticalPosition;
+        }
+        if (userScroll - verticalPosition >= 50) {
+            $('.navbar').animate({top: 0}, 150);
+            userScroll = verticalPosition;
+        }
+    });
 });
 
 var userScroll = 0;
